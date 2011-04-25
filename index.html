@@ -14,15 +14,16 @@
 		<link rel="stylesheet" media="all" href="default.css"/> 
 		<meta name="viewport" content="width=device-width; initial-scale=1"/> 
 		<!-- Add "maximum-scale=1" to fix the weird iOS auto-zoom bug on orientation changes. --> 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script> 
 		<script>
-			function showSplash() {
-				document.getElementById('explanation').style.display='none';
-				document.getElementById('splash').style.display='block';
+			var sections = ["splash", "culture", "deal"];
+			function hideAll() {
+				for (var id in sections) {
+					document.getElementById(sections[id]).style.display='none';
+				}
 			}
-			function showExplanation() {
-				document.getElementById('splash').style.display='none';
-				document.getElementById('explanation').style.display='block';
+			function showSection(id) {
+				hideAll();
+				document.getElementById(id).style.display='block';
 			}
 		</script>
 	</head> 
@@ -33,13 +34,18 @@
 			<nav>
 				<ul>
 					<li>
-						<a href="#splash" onclick="showSplash()">
+						<a href="#splash" onclick="showSection('splash')">
 							Home
 						</a>
 					</li>
 					<li>
-						<a href="#explanation" onclick="showExplanation()">
-							What is wild garlic?
+						<a href="#culture" onclick="showSection('culture')">
+							Culture
+						</a>
+					</li>
+					<li>
+						<a href="#deal" onclick="showSection('deal')">
+							Deal
 						</a>
 					</li>
 				</ul>
@@ -47,50 +53,25 @@
 		</header>
 		
 		<section id="splash">
-			<header>
-				<a name="splash">
-					<img src="wild-garlic-natural-pesto.png" width="480px"/>
-				</a>
-			</header>
-			<footer>
-				<p>100% Natural, Organically Grown, No Preservatives!</p>
-			</footer>
+			<article id="idea">
+					<h1>The Idea</h1>
+					<p>
+						The idea for organicsDE originated in 2010, when Germany born Oliver Meister grazed the Viktualienmarkt on one of his visits to Munich and realized how much he missed the specialties of his home town. 
+						One local product in particular is impossible to find anywhere in the United States, a Pesto made from the Ur-Kraut Baerlauch (Wild Garlic). 
+						On a mission to bring Baerlauch and its unique flavor to the US, partnerships with local growers and manufactures were established. 
+						OrganicsDE is committed to only sourcing products and ingredients that are 100% natural, either grown wild or cultivated adhering to Organic and Biodynamic farming standards. 
+						Preserving cultural traditions, from the field to your table.
+					</p>
+			</article>
+			<div id="jar">
+				<img src="jar.png"/>
+			</div>
+		</section>
+
+		<section id="culture">
 		</section>
 		
-		<section id="explanation">
-			<header>
-				<a name="explanation">
-					<img src="what-is-wild-garlic.png"/>
-				</a>
-			</header>
-			<article>
-				<p>
-					Not to be confused with regular Garlic, Wild Garlic is also a vegetable, but a distant relative of the Leek family.
-				</p>
-				<p>
-					Grown and used for centuries in Germany, today Wild Garlic is a welcomed addition to the health food industry. 
-					A treat for your palate, body and soul, Wild Garlic is naturally loaded with vital substances:
-				</p>
-				<ul>
-					<li>
-						Chlorophyll for Natural Detoxification
-					</li>
-					<li>
-						Micronutrients supporting the Cardiovascular System
-					</li>
-					<li>
-						Sulfurous Essential Oils enhance Metabolism
-					</li>
-				</ul>
-				<img id="jar" src="jar.png" align="right"/>
-				<p>
-					Our Wild Garlic Natural Pesto is made from leafs only which are delicately handpicked from wild stock in German Forests. 
-					Preserving German cultural tradition, organicsDE Wild Garlic Pesto delivers wellness from nature’s fields to your table.
-				</p>
-				<p>
-					Enjoy multiple ways: simply spread on bread, dress a salad, season a soup, spice up a pasta sauce, intensify a roast or just dip anything.
-				</p>
-			</article>
+		<section id="deal">
 		</section>
 		
 	</body> 

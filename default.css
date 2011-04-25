@@ -1,13 +1,14 @@
-body {margin-left:auto; margin-right:auto; width:1024px;}
-header {text-align:center;}
-section {width:960px; float:left; display:none;}
+body {font-size:x-large;}
+section {display:none; margin-left:auto; margin-right:auto; width:1280px;}
+body header {border-bottom: 1px solid green;}
 
-body header nav {float:right;}
-nav {width:200px;}
-nav ul {text-align:left; list-style:none; margin:0; padding:0;}
+nav {float:right; width:600px; position:relative; top:128px;}
+nav ul {text-align:right; list-style:none; margin:0; padding:0;}
+nav ul li {display:inline; border: solid; border-width: 1px 1px 0 1px; margin: 0 0.5em 0 0; border-top-left-radius:8px; border-top-right-radius:8px;}
+nav ul li a {padding: 0 1em; text-decoration:none;}
+nav ul li.selected {padding-bottom: 1px; background: white;}
 
-section#splash {background-image:url('backdrop.jpg'); no-repeat; background-size:100%; height:900px; display:block;}
-section#splash footer {color:white; margin-top:640px; text-align:center; font-size:x-large; font-weight:bold;}
+#splash {display:block; padding-top:10px;}
+#idea {float:left; width:600px; padding-top:8px;}
+#jar {float:right; width:600px;}
 
-article {font-size:xx-large;}
-img#jar {width:480px; padding-left:10px;}
