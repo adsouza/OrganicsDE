@@ -1,7 +1,7 @@
 body {font-size:large; padding-left:20px; padding-right:20px;}
-body header {border-bottom: 1px solid green; width:100%;}
+body header {border-bottom: 1px solid green;}
 body header img#logo {position:relative; left:-32px;}
-section {display:none; margin-left:auto; margin-right:auto; width:1000px; padding-top:10px;}
+section {display:none; margin-left:auto; margin-right:auto; width:960px; padding-top:10px;}
 #splash {display:block;}
 
 nav {float:right; width:400px; position:relative; top:132px;}
@@ -10,10 +10,10 @@ nav ul li {display:inline; border: solid; border-width: 1px 1px 0 1px; margin: 0
 nav ul li a {padding: 0 1em; text-decoration:none;}
 nav ul li.selected {padding-bottom: 1px; background: white;}
 
-section article {float:left; width:640px; padding-left:20px; padding-right:20px; margin-top:20px; box-shadow:4px 4px 12px lightgrey;}
+section article {float:left; width:600px; padding-left:20px; padding-right:20px; margin-top:0; box-shadow:4px 4px 12px lightgrey;}
 section div {float:right; width:320px;}
 section div img {width:301px; padding-left:16px;}
-section#culture article {width:960px; float:none; padding-bottom:5px; padding-top:1px; margin-left:auto; margin-right:auto;}
+section#culture article {width:854px; float:none; padding-bottom:5px; padding-top:1px; margin-left:auto; margin-right:auto;}
 
 body footer {border-top: 1px solid green; margin-top:20px;}
 body footer article {text-align:center; font-size:small; color:grey;}
