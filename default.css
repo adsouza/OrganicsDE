@@ -1,19 +1,20 @@
-body {font-size:x-large;}
+body {font-size:large;}
 body header {border-bottom: 1px solid green;}
-section {display:none; margin-left:auto; margin-right:auto; width:1280px; padding-top:10px;}
+section {display:none; margin-left:auto; margin-right:auto; width:1000px; padding-top:10px;}
 #splash {display:block;}
 
-nav {float:right; width:600px; position:relative; top:128px;}
+nav {float:right; width:400px; position:relative; top:132px;}
 nav ul {text-align:right; list-style:none; margin:0; padding:0;}
-nav ul li {display:inline; border: solid; border-width: 1px 1px 0 1px; margin: 0 0.5em 0 0; border-top-left-radius:8px; border-top-right-radius:8px;}
+nav ul li {display:inline; border: solid; border-width: 1px 1px 0 1px; margin: 0 0.5em 0 0; border-top-left-radius:8px; border-top-right-radius:8px; padding-top:4px;}
 nav ul li a {padding: 0 1em; text-decoration:none;}
 nav ul li.selected {padding-bottom: 1px; background: white;}
 
-section article {float:left; width:600px; padding-left:20px; padding-right:20px; margin-top:20px; box-shadow:4px 4px 12px lightgrey;}
-section div {float:right; width:600px;}
-section#culture article {width:1000px; margin-left:auto; margin-right:auto; float:none;}
+section article {float:left; width:640px; padding-left:20px; padding-right:20px; margin-top:20px; box-shadow:4px 4px 12px lightgrey;}
+section div {float:right; width:320px;}
+section div img {width:301px; padding-left:16px;}
+section#culture article {width:960px; float:none; padding-bottom:5px; padding-top:1px; margin-left:auto; margin-right:auto;}
 
-body footer {border-top: 1px solid green;}
+body footer {border-top: 1px solid green; margin-top:20px;}
 body footer article {float:right; margin:20px;}
 address {box-shadow:4px 4px 12px lightgrey; padding:10px; border-radius:4px;}
 hr {width:0;}
