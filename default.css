@@ -1,5 +1,6 @@
-body {font-size:large;}
+body {font-size:large; padding-left:20px; padding-right:20px;}
 body header {border-bottom: 1px solid green; width:100%;}
+body header img#logo {position:relative; left:-32px;}
 section {display:none; margin-left:auto; margin-right:auto; width:1000px; padding-top:10px;}
 #splash {display:block;}
 
