@@ -29,15 +29,19 @@
 		<meta http-equiv="Page-Exit" content="RevealTrans (Duration=2, Transition=23)"/>
 		
 		<script>
-			var sections = ["splash", "culture", "deal"];
+			var sections = [ "splash", "culture", "deal" ];
 			function hideAll() {
 				for (var id in sections) {
-					document.getElementById(sections[id]).style.display='none';
+					document.getElementById(sections[id]).style.display = 'none';
+					document.getElementById(sections[id] + 'Tab').style.backgroundColor = '';
+					document.getElementById(sections[id] + 'Tab').style.borderBottom = '';
 				}
 			}
 			function showSection(id) {
 				hideAll();
 				document.getElementById(id).style.display='block';
+				document.getElementById(id + 'Tab').style.backgroundColor = 'white';
+				document.getElementById(id + 'Tab').style.borderBottom = 'solid white';
 			}
 		</script>
 		<script type="text/javascript">
@@ -53,22 +57,22 @@
 		</script>
 	</head> 
  
-	<body>
+	<body onload="showSection('splash')">
 		<header>
 			<img id="logo" src="logo.png"/>
 			<nav>
 				<ul>
-					<li>
+					<li id="splashTab">
 						<a href="#splash" onclick="showSection('splash')">
 							Home
 						</a>
 					</li>
-					<li>
+					<li id="cultureTab">
 						<a href="#culture" onclick="showSection('culture')">
 							Culture
 						</a>
 					</li>
-					<li>
+					<li id="dealTab">
 						<a href="#deal" onclick="showSection('deal')">
 							Deal
 						</a>
