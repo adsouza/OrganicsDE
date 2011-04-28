@@ -1,5 +1,5 @@
 body {font-size:large; padding-left:20px; padding-right:20px;}
-body header {border-bottom: 1px solid green; position:relative;}
+body header {border-bottom: 1px solid green; position:relative; background-color:#fdfffc; border-top-left-radius:20px; border-top-right-radius:20px;}
 body header img#logo {position:relative; left:-32px;}
 section {display:none; margin-left:auto; margin-right:auto; width:960px; padding-top:20px;}
 #splash {display:block;}
@@ -15,7 +15,7 @@ section div {float:right; width:320px;}
 section div img {width:302px; padding-left:16px;}
 section#culture article {width:854px; float:none; padding-bottom:5px; padding-top:1px; margin-left:auto; margin-right:auto; margin-top:20px;}
 
-body footer {border-top: 1px solid green; margin-top:20px;}
+body footer {border-top: 1px solid green; margin-top:20px; background-color:#fcfffa; border-bottom-left-radius:20px; border-bottom-right-radius:20px;}
 body footer article {text-align:center; font-size:small; color:grey;}
 body footer #icons {padding:10px;}
 body footer #icons #twitter {float:right;}
